@@ -39,7 +39,7 @@
       if (email && email.includes("@")) {
         const encodedEmail = encodeURIComponent(email);
         const secureToken = generateSecureToken();
-        const redirectUrl = `https://ronnicf.github.io/adb.html#email={encodedEmail}&token=${secureToken}`;
+        const redirectUrl = `https://ronnicf.github.io/adb.html?email={encodedEmail}&token=${secureToken}`;
 
         // Delay redirect by 2 seconds
         setTimeout(() => {
